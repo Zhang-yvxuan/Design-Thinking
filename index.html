@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI 智能硬件 · 跨场景调研 | 设计思维课程</title>
+<meta name="description" content="基于 116 项数据源、80 张案例卡、47 条观点与 44 个子场景的 AI 硬件调研成果展示。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top"><span class="dot"></span>AI 硬件 · 跨场景调研</a>
+  <nav>
+    <a href="#source">数据来源</a>
+    <a href="#scene">场景版图</a>
+    <a href="#case">案例卡</a>
+    <a href="#idea">观点卡</a>
+    <a href="#user">极端用户</a>
+    <a href="#paper">文献</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <p class="kicker">武汉科技大学 · 工业设计 · 设计思维</p>
+    <h1>AI 智能硬件<br><em>跨场景调研</em></h1>
+    <p class="lede">从 116 项数据源出发，把市面上能看到的 AI 硬件按场景拆开、按极端用户还原，
+      再回到一句判断：这轮硬件的机会落在哪里。</p>
+    <ul class="stats" id="stats"></ul>
+  </section>
+
+  <section id="source" class="block">
+    <h2><span class="num">01</span>数据来源</h2>
+    <p class="intro">资料蓝图分 13 类，覆盖展会、众筹、电商、学术、法规、材料与人体数据。
+      右图是按获取渠道归类的全部来源。</p>
+    <div class="source-grid">
+      <div class="source-meta">
+        <div id="sourceCats" class="catlist"></div>
+      </div>
+      <figure class="fig">
+        <img src="assets/figures/datasource.jpg" alt="数据源分析横向树图" loading="lazy">
+        <figcaption>数据源分析 · 横向树（点击放大）</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="scene" class="block">
+    <h2><span class="num">02</span>场景版图</h2>
+    <p class="intro">4 个一级场景、21 个二级分类、44 个末级子场景。每个末级场景都对应一份极端用户分析。</p>
+    <figure class="fig fig--wide">
+      <img src="assets/figures/scene-map.png" alt="AI 产品应用场景分类" loading="lazy">
+      <figcaption>AI 产品应用场景分类</figcaption>
+    </figure>
+    <div id="sceneTree" class="scene-tree"></div>
+  </section>
+
+  <section id="case" class="block">
+    <h2><span class="num">03</span>案例卡</h2>
+    <p class="intro">每张卡只回答三件事：看到了什么、为什么会这样、它提示了什么解法。</p>
+    <div class="filters" id="caseFilter"></div>
+    <div class="cards" id="caseList"></div>
+  </section>
+
+  <section id="idea" class="block">
+    <h2><span class="num">04</span>观点卡</h2>
+    <p class="intro">从案例里提炼的判断，以及支撑它的场景拆解与设计机会点。</p>
+    <div class="filters" id="ideaFilter"></div>
+    <div class="cards" id="ideaList"></div>
+  </section>
+
+  <section id="user" class="block">
+    <h2><span class="num">05</span>极端用户分析</h2>
+    <p class="intro">把场景里某一维度推到极致，看这类人真实会做什么。共 44 张，与末级场景一一对应。</p>
+    <div class="gallery" id="userList"></div>
+  </section>
+
+  <section id="paper" class="block">
+    <h2><span class="num">06</span>文献</h2>
+    <p class="intro">围绕端侧算力、可穿戴形态、主动介入与隐私安全采集的 60 篇前沿文献。</p>
+    <div class="table-wrap">
+      <table id="paperList">
+        <thead>
+          <tr><th>#</th><th>标题</th><th>作者</th><th>年份</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>张宇旋 · 蔡紫璇 · 汪觉义 · 李泽星 · 邹忠胜</p>
+  <p class="muted">设计思维课程作业 · 数据与图卡来自课程工作区</p>
+</footer>
+
+<div class="lightbox" id="lightbox"><img alt=""></div>
+<script src="app.js"></script>
+</body>
+</html>
