@@ -1,131 +1,14 @@
 <!doctype html>
-<html lang="zh-CN">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI 智能硬件 · 跨场景调研 | 设计思维课程</title>
-<meta name="description" content="基于 116 项数据源、80 张案例卡、47 条观点与 44 个子场景的 AI 硬件调研成果展示。">
-<link rel="icon" type="image/svg+xml" href="assets/art/mark.svg">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="exhibit.css">
-</head>
-<body>
-<progress class="reading" id="reading" max="100" value="0" aria-hidden="true"></progress>
-<header class="nav">
-  <a class="brand" href="#top"><span class="dot"></span>AI 硬件 · 跨场景调研</a>
-  <nav>
-    <a href="#source">数据来源</a>
-    <a href="#pack">数据包</a>
-    <a href="#scene">场景版图</a>
-    <a href="#case">案例卡</a>
-    <a href="#idea">观点卡</a>
-    <a href="#user">极端用户</a>
-    <a href="#paper">文献</a>
-  </nav>
-</header>
-
-<main id="top">
-  <section class="hero">
-    <div class="hero__art" aria-hidden="true"></div>
-    <div class="hero__inner">
-      <p class="kicker">武汉科技大学 · 工业设计 · 设计思维</p>
-      <h1>
-        <span class="hero__line">AI 智能硬件</span>
-        <span class="hero__line hero__line--accent">跨场景调研</span>
-      </h1>
-      <p class="lede">从 116 项数据源出发，把市面上能看到的 AI 硬件按场景拆开、按极端用户还原，
-        再回到一句判断：这轮硬件的机会落在哪里。</p>
-      <ul class="stats" id="stats"></ul>
-      <div class="hero__links"><a href="#case">看精选案例 <span aria-hidden="true">↗</span></a><a href="#scene">浏览场景版图 <span aria-hidden="true">↓</span></a></div>
-    </div>
-  </section>
-
-  <section id="source" class="block">
-    <h2><span class="num">01</span>数据来源</h2>
-    <p class="intro">资料蓝图分 13 类，覆盖展会、众筹、电商、学术、法规、材料与人体数据。
-      右图是按获取渠道归类的全部来源。</p>
-    <div class="source-grid">
-      <div class="source-meta">
-        <div id="sourceCats" class="catlist"></div>
-      </div>
-      <figure class="fig">
-        <img src="assets/figures/datasource.jpg" alt="数据源分析横向树图" loading="lazy">
-        <figcaption>数据源分析 · 横向树（点击放大）</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section id="pack" class="block">
-    <h2><span class="num">02</span>数据包</h2>
-    <p class="intro">五位成员各自一套完整数据包，结构一致：数据源分析、案例数据、案例卡、文献、观点卡。
-      文献层是资料量的主体。</p>
-    <div class="table-wrap table-wrap--short">
-      <table id="packTable">
-        <thead>
-          <tr><th>成员</th><th>01 数据源</th><th>02 案例数据</th><th>03 案例卡</th><th>04 文献</th><th>05 观点卡</th><th>合计</th></tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-  </section>
-
-  <section id="scene" class="block">
-    <h2><span class="num">03</span>场景版图</h2>
-    <p class="intro">4 个一级场景、21 个二级分类、44 个末级子场景。每个末级场景都对应一份极端用户分析。</p>
-    <figure class="fig fig--wide">
-      <img src="assets/figures/scene-map.png" alt="AI 产品应用场景分类" loading="lazy">
-      <figcaption>AI 产品应用场景分类</figcaption>
-    </figure>
-    <div id="sceneTree" class="scene-tree"></div>
-  </section>
-
-  <section id="case" class="block">
-    <h2><span class="num">04</span>案例卡</h2>
-    <p class="intro">每张卡只回答三件事：看到了什么、为什么会这样、它提示了什么解法。</p>
-    <section class="exhibit" id="caseExhibit" aria-label="精选案例"></section>
-    <div class="archive-head">
-      <div><p class="eyebrow">CASE ARCHIVE</p><h3>案例档案</h3></div>
-      <label class="archive-search"><span>搜索案例</span><input type="search" id="caseSearch" placeholder="产品、编号或场景" autocomplete="off"></label>
-    </div>
-    <div class="filters" id="caseFilter" aria-label="按成员筛选案例"></div>
-    <div class="cards" id="caseList"></div>
-    <div class="archive-page"><p id="caseStatus" aria-live="polite"></p><button class="archive-more" id="caseMore" type="button" hidden>展开更多案例 ↓</button></div>
-  </section>
-
-  <section id="idea" class="block">
-    <h2><span class="num">05</span>观点卡</h2>
-    <p class="intro">从案例里提炼的判断，以及支撑它的场景拆解与设计机会点。</p>
-    <div class="filters" id="ideaFilter"></div>
-    <div class="cards" id="ideaList"></div>
-  </section>
-
-  <section id="user" class="block">
-    <h2><span class="num">06</span>极端用户分析</h2>
-    <p class="intro">把场景里某一维度推到极致，看这类人真实会做什么。共 44 张，与末级场景一一对应。</p>
-    <div class="gallery" id="userList"></div>
-  </section>
-
-  <section id="paper" class="block">
-    <h2><span class="num">07</span>文献</h2>
-    <p class="intro">围绕端侧算力、可穿戴形态、主动介入与隐私安全采集的 60 篇前沿文献。</p>
-    <div class="table-wrap">
-      <table id="paperList">
-        <thead>
-          <tr><th>#</th><th>标题</th><th>作者</th><th>年份</th></tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-  </section>
-</main>
-
-<footer class="foot">
-  <p>张宇旋 · 蔡紫璇 · 汪觉义 · 李泽星 · 邹忠胜</p>
-  <p class="muted">设计思维课程作业 · 数据与图卡来自课程工作区</p>
-</footer>
-
-<div class="lightbox" id="lightbox"><img alt=""></div>
-<script src="case-exhibit.js" defer></script>
-<script src="app.js" defer></script>
-</body>
-</html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>跨场景调研 · AI 智能硬件调研</title><meta name="description" content="从典型硬件的使用细节出发，把产品观察、场景分类和极端用户分析串起来，寻找下一轮设计机会。">
+<link rel="icon" href="assets/art/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="pages.css">
+<script type="module" src="pages.js"></script></head><body data-page="index">
+<a class="skip" href="#main">跳到正文</a><progress class="reading" id="reading" max="100" value="0" aria-hidden="true"></progress>
+<header class="nav"><a class="brand" href="index.html"><span class="dot"></span>AI 硬件研究展</a><nav aria-label="展站导航"><a href="index.html" aria-current="page">首页</a><a href="cases.html">案例与观点</a><a href="scenes.html">场景与用户</a><a href="library.html">资料库</a></nav></header>
+<main id="main"><section class="cover"><div class="hero__art" aria-hidden="true"></div><div class="cover-copy"><p class="eyebrow">设计思维课程 / AI HARDWARE STUDIES</p><h1>AI 智能硬件<span>跨场景调研</span></h1><p>从典型硬件的使用细节出发，把产品观察、场景分类和极端用户分析串起来，寻找下一轮设计机会。</p><div class="cover-links"><a class="action" href="cases.html">浏览案例 ↗</a><a class="quiet-link" href="scenes.html">查看场景版图 ↓</a></div><ul id="stats" class="stats" aria-label="调研概览"></ul></div></section><p id="loadError" class="notice" hidden></p>
+<section class="edition" id="case"><div class="split-head"><div><p class="eyebrow">01 / CURATED CASES</p><h2>精选案例</h2></div><a class="quiet-link" href="cases.html">进入案例档案 ↗</a></div><div id="featured" aria-live="polite"></div></section>
+<section class="edition"><div class="split-head"><div><p class="eyebrow">02 / FIELD GUIDE</p><h2>从哪里读起？</h2></div></div>
+<div class="entry-grid"><a href="cases.html"><b>01</b><h3>看一个产品</h3><p>从外观和操作入手，读案例卡里的观察、原因与设计启示。</p><span>案例与观点 ↗</span></a><a href="scenes.html"><b>02</b><h3>看一类人怎么用</h3><p>从四大场景进入 44 个细分场景，顺着原导图回到关联案例。</p><span>场景与用户 ↗</span></a><a href="library.html"><b>03</b><h3>回到资料</h3><p>查看五位成员的数据包、资料获取渠道和文献索引。</p><span>资料库 ↗</span></a></div></section>
+<section class="edition takeaway"><p class="eyebrow">03 / DESIGN TAKEAWAY</p><h2>该介入时出现，其余时候退到背景里</h2><p>伴学案例把反馈收在短促的动作里；办公观点卡提出，会议待办应保留原话，由记录者确认后再转发。两条线索都指向同一个原型问题：设备什么时候该介入，控制权怎样交还给人？</p><a class="quiet-link" href="cases.html?view=opinions">去看组员的观点卡 ↗</a></section></main>
+<footer class="foot"><p>张宇旋 · 蔡紫璇 · 汪觉义 · 李泽星 · 邹忠胜</p><p class="muted">武汉科技大学 · 工业设计 · 设计思维课程</p></footer>
+<dialog class="zoom" id="zoom" aria-label="查看大图"><form method="dialog"><button class="small-button" aria-label="关闭大图">关闭 ×</button></form><div class="zoom__image"><img alt=""></div></dialog></body></html>
