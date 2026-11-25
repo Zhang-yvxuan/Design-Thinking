@@ -591,6 +591,36 @@ td.year {
 
 .cell-link:hover { color: var(--green); border-bottom-color: var(--green); }
 
+/* 数据包矩阵 */
+.table-wrap--short { max-height: none; }
+
+#packTable th[scope="row"] {
+  position: static;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: var(--ink);
+  width: 110px;
+}
+
+.pack-cell {
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-2);
+  width: 96px;
+}
+
+.pack-cell.is-empty { color: var(--muted); }
+
+.pack-total {
+  text-align: center;
+  font-weight: 700;
+  color: var(--green);
+  font-variant-numeric: tabular-nums;
+  width: 80px;
+}
+
 /* ---------- 13. 页脚 ---------- */
 .foot {
   margin-top: var(--space-7);

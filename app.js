@@ -12,6 +12,7 @@ async function boot() {
 
   renderStats();
   renderSources();
+  renderPacks();
   renderScenes();
   renderCases();
   renderIdeas();
@@ -45,6 +46,20 @@ function renderSources() {
     .join("");
   $("#sourceCats").innerHTML =
     groups + `<div class="total"><span>合计</span><b>${ds.total}</b></div>`;
+}
+
+/* ---------- 数据包 ---------- */
+function renderPacks() {
+  const body = $("#packTable tbody");
+  if (!body || !DATA.packs) return;
+  body.innerHTML = DATA.packs.rows
+    .map((row) => {
+      const cells = row.cells
+        .map((n) => `<td class="pack-cell${n ? "" : " is-empty"}">${n || "—"}</td>`)
+        .join("");
+      return `<tr><th scope="row">${esc(row.name)}</th>${cells}<td class="pack-total">${row.files}</td></tr>`;
+    })
+    .join("");
 }
 
 /* ---------- 场景版图 ---------- */
