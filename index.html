@@ -5,9 +5,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AI 智能硬件 · 跨场景调研 | 设计思维课程</title>
 <meta name="description" content="基于 116 项数据源、80 张案例卡、47 条观点与 44 个子场景的 AI 硬件调研成果展示。">
+<link rel="icon" type="image/svg+xml" href="assets/art/mark.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="exhibit.css">
 </head>
 <body>
+<progress class="reading" id="reading" max="100" value="0" aria-hidden="true"></progress>
 <header class="nav">
   <a class="brand" href="#top"><span class="dot"></span>AI 硬件 · 跨场景调研</a>
   <nav>
@@ -23,11 +26,18 @@
 
 <main id="top">
   <section class="hero">
-    <p class="kicker">武汉科技大学 · 工业设计 · 设计思维</p>
-    <h1>AI 智能硬件<br><em>跨场景调研</em></h1>
-    <p class="lede">从 116 项数据源出发，把市面上能看到的 AI 硬件按场景拆开、按极端用户还原，
-      再回到一句判断：这轮硬件的机会落在哪里。</p>
-    <ul class="stats" id="stats"></ul>
+    <div class="hero__art" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <p class="kicker">武汉科技大学 · 工业设计 · 设计思维</p>
+      <h1>
+        <span class="hero__line">AI 智能硬件</span>
+        <span class="hero__line hero__line--accent">跨场景调研</span>
+      </h1>
+      <p class="lede">从 116 项数据源出发，把市面上能看到的 AI 硬件按场景拆开、按极端用户还原，
+        再回到一句判断：这轮硬件的机会落在哪里。</p>
+      <ul class="stats" id="stats"></ul>
+      <div class="hero__links"><a href="#case">看精选案例 <span aria-hidden="true">↗</span></a><a href="#scene">浏览场景版图 <span aria-hidden="true">↓</span></a></div>
+    </div>
   </section>
 
   <section id="source" class="block">
@@ -72,8 +82,14 @@
   <section id="case" class="block">
     <h2><span class="num">04</span>案例卡</h2>
     <p class="intro">每张卡只回答三件事：看到了什么、为什么会这样、它提示了什么解法。</p>
-    <div class="filters" id="caseFilter"></div>
+    <section class="exhibit" id="caseExhibit" aria-label="精选案例"></section>
+    <div class="archive-head">
+      <div><p class="eyebrow">CASE ARCHIVE</p><h3>案例档案</h3></div>
+      <label class="archive-search"><span>搜索案例</span><input type="search" id="caseSearch" placeholder="产品、编号或场景" autocomplete="off"></label>
+    </div>
+    <div class="filters" id="caseFilter" aria-label="按成员筛选案例"></div>
     <div class="cards" id="caseList"></div>
+    <div class="archive-page"><p id="caseStatus" aria-live="polite"></p><button class="archive-more" id="caseMore" type="button" hidden>展开更多案例 ↓</button></div>
   </section>
 
   <section id="idea" class="block">
@@ -109,6 +125,7 @@
 </footer>
 
 <div class="lightbox" id="lightbox"><img alt=""></div>
-<script src="app.js"></script>
+<script src="case-exhibit.js" defer></script>
+<script src="app.js" defer></script>
 </body>
 </html>

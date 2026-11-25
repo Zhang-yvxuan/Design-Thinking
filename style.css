@@ -164,32 +164,77 @@ main {
 }
 
 /* ---------- 5. 首屏 ---------- */
-.hero { padding: clamp(56px, 9vw, 104px) 0 clamp(32px, 5vw, 56px); }
+.hero {
+  position: relative;
+  padding: clamp(64px, 10vw, 120px) 0 clamp(40px, 6vw, 64px);
+  overflow: hidden;
+}
+
+.hero__art {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 66%;
+  background: url("assets/art/hero.jpg") right center / cover no-repeat;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 26%, #000 88%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 26%, #000 88%, transparent 100%);
+  opacity: 0;
+  transform: scale(1.04);
+  animation: art-in 1.6s cubic-bezier(.16,.84,.28,1) .1s forwards;
+  will-change: opacity, transform;
+}
+
+.hero__art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, var(--bg) 0%, rgba(251,251,248,0) 18%);
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+}
 
 .kicker {
   font-size: 13px;
   letter-spacing: .14em;
   text-transform: uppercase;
   color: var(--muted);
+  opacity: 0;
+  animation: rise .8s cubic-bezier(.16,.84,.28,1) .15s forwards;
 }
 
 .hero h1 {
   margin: var(--space-4) 0 var(--space-5);
-  font-size: clamp(38px, 6.4vw, 68px);
-  line-height: 1.08;
+  font-size: clamp(40px, 6.6vw, 72px);
+  line-height: 1.04;
   font-weight: 800;
-  letter-spacing: -.025em;
+  letter-spacing: -.03em;
 }
 
-.hero h1 em {
-  font-style: normal;
+.hero__line {
+  display: block;
+  opacity: 0;
+  transform: translateY(.32em);
+  animation: rise 1s cubic-bezier(.16,.84,.28,1) forwards;
+}
+
+.hero__line:nth-child(1) { animation-delay: .24s; }
+
+.hero__line--accent {
   color: var(--green);
+  animation-delay: .38s;
 }
 
 .lede {
-  max-width: 56ch;
+  max-width: 52ch;
   font-size: clamp(15px, 1.7vw, 18px);
   color: var(--ink-2);
+  opacity: 0;
+  animation: rise .9s cubic-bezier(.16,.84,.28,1) .56s forwards;
 }
 
 .stats {
@@ -203,7 +248,16 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2px;
+  opacity: 0;
+  animation: rise .8s cubic-bezier(.16,.84,.28,1) forwards;
 }
+
+.stats li:nth-child(1) { animation-delay: .64s; }
+.stats li:nth-child(2) { animation-delay: .70s; }
+.stats li:nth-child(3) { animation-delay: .76s; }
+.stats li:nth-child(4) { animation-delay: .82s; }
+.stats li:nth-child(5) { animation-delay: .88s; }
+.stats li:nth-child(6) { animation-delay: .94s; }
 
 .stats b {
   font-size: clamp(26px, 3.4vw, 34px);
@@ -281,44 +335,92 @@ main {
 /* ---------- 8. 场景版图 ---------- */
 .scene-tree {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: clamp(16px, 2.4vw, 28px);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(14px, 1.8vw, 22px);
 }
 
-.scene-col h3 {
+.scene-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-s);
+  transition: transform .35s cubic-bezier(.16,.84,.28,1),
+              box-shadow .35s ease, border-color .35s ease;
+}
+
+.scene-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-m);
+}
+
+.scene-card__media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--surface-sunk);
+}
+
+.scene-card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .8s cubic-bezier(.16,.84,.28,1);
+}
+
+.scene-card:hover .scene-card__media img { transform: scale(1.05); }
+
+.scene-card__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 52%, rgba(255,255,255,.55) 100%);
+}
+
+.scene-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: 14px 15px 16px;
+}
+
+.scene-card h3 {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: var(--space-3);
-  margin-bottom: 10px;
-  padding-bottom: 6px;
-  font-size: 14px;
-  letter-spacing: .04em;
+  gap: var(--space-2);
+  padding-bottom: 7px;
+  font-size: 14.5px;
+  letter-spacing: .02em;
   color: var(--green-deep);
-  border-bottom: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line);
 }
 
-.scene-col h3 .count {
+.scene-card h3 .count {
   font-family: var(--font-mono);
   font-size: 12px;
   font-weight: 400;
   color: var(--muted);
 }
 
-.scene-col li {
+.scene-card li {
   display: flex;
-  gap: var(--space-2);
-  padding: 3px 0;
-  font-size: 13.5px;
-  line-height: 1.5;
+  gap: 7px;
+  padding: 2px 0;
+  font-size: 12.6px;
+  line-height: 1.45;
   color: var(--ink-2);
 }
 
-.scene-col li .code {
-  flex: 0 0 38px;
-  padding-top: 2px;
+.scene-card li .code {
+  flex: 0 0 34px;
+  padding-top: 1px;
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 10.5px;
   color: var(--muted);
 }
 
@@ -367,6 +469,7 @@ main {
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
@@ -375,8 +478,21 @@ main {
   border: 1px solid var(--line);
   border-radius: var(--radius-m);
   box-shadow: var(--shadow-s);
+  overflow: hidden;
   transition: box-shadow .18s ease, border-color .18s ease;
 }
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--green), rgba(47,122,77,0));
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.card:hover::before { opacity: 1; }
 
 .card:hover {
   border-color: var(--line-strong);
@@ -699,5 +815,110 @@ td.year {
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  * { transition: none !important; }
+  * { transition: none !important; animation: none !important; }
 }
+
+/* ============================================================
+   17. 动效层
+   ============================================================ */
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(.32em); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes art-in {
+  from { opacity: 0; transform: scale(1.06); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pop {
+  0% { transform: scale(.97); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* 阅读进度条 */
+.reading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  width: 100%;
+  height: 2px;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  pointer-events: none;
+}
+
+.reading::-webkit-progress-bar { background: transparent; }
+
+.reading::-webkit-progress-value {
+  background: linear-gradient(90deg, var(--green), #7ab894);
+  transition: width .12s linear;
+}
+
+.reading::-moz-progress-bar { background: var(--green); }
+
+/* 滚动进场 */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .8s cubic-bezier(.16,.84,.28,1),
+              transform .8s cubic-bezier(.16,.84,.28,1);
+}
+
+.reveal.is-in { opacity: 1; transform: none; }
+
+.reveal--d1 { transition-delay: .06s; }
+.reveal--d2 { transition-delay: .12s; }
+.reveal--d3 { transition-delay: .18s; }
+.reveal--d4 { transition-delay: .24s; }
+.reveal--d5 { transition-delay: .30s; }
+.reveal--d6 { transition-delay: .36s; }
+
+/* 卡片与图集的悬停微交互 */
+.card {
+}
+
+.archive-card:hover .case-art img { transform: scale(1.055); }
+
+.gallery img {
+  transition: transform .6s cubic-bezier(.16,.84,.28,1);
+}
+
+.gallery figure:hover img { transform: scale(1.04); }
+
+.gallery figure {
+  transition: transform .35s cubic-bezier(.16,.84,.28,1),
+              box-shadow .35s ease, border-color .35s ease;
+}
+
+/* 灯箱开合 */
+.lightbox {
+  opacity: 0;
+  transition: opacity .28s ease;
+}
+
+.lightbox.is-open { opacity: 1; }
+
+.lightbox img {
+  transform: scale(.94);
+  transition: transform .38s cubic-bezier(.16,.84,.28,1);
+}
+
+.lightbox.is-open img { transform: scale(1); }
+
+/* 导航当前项 */
+.nav nav a.is-active {
+  color: var(--green);
+  border-bottom-color: var(--green);
+}
+
+/* 首屏背景轻微视差由 JS 控制 class */
+.hero__art.is-scrolled { translate: 0 2%; }

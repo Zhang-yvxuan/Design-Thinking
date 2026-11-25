@@ -1,0 +1,482 @@
+{
+  "zyx:ZYX-001": {
+    "image": "assets/cases/zyx-zyx-001.webp",
+    "title": "AI 桌面伴学机器人",
+    "source": "zyx al.pdf · 第 1 页第 1 张",
+    "illustration": true
+  },
+  "zyx:ZYX-002": {
+    "image": "assets/cases/zyx-zyx-002.webp",
+    "title": "AI 睡眠监护仪",
+    "source": "zyx al.pdf · 第 1 页第 2 张",
+    "illustration": true
+  },
+  "zyx:ZYX-003": {
+    "image": "assets/cases/zyx-zyx-003.webp",
+    "title": "开放式耳夹耳机",
+    "source": "zyx al.pdf · 第 1 页第 3 张",
+    "illustration": true
+  },
+  "zyx:ZYX-004": {
+    "image": "assets/cases/zyx-zyx-004.webp",
+    "title": "食材识别摄像头",
+    "source": "zyx al.pdf · 第 1 页第 4 张",
+    "illustration": true
+  },
+  "zyx:ZYX-005": {
+    "image": "assets/cases/zyx-zyx-005.webp",
+    "title": "会议拾音圆盘",
+    "source": "zyx al.pdf · 第 2 页第 1 张",
+    "illustration": true
+  },
+  "zyx:ZYX-006": {
+    "image": "assets/cases/zyx-zyx-006.webp",
+    "title": "智能分药盒",
+    "source": "zyx al.pdf · 第 2 页第 2 张",
+    "illustration": true
+  },
+  "zyx:ZYX-007": {
+    "image": "assets/cases/zyx-zyx-007.webp",
+    "title": "宠物陪伴喂食机",
+    "source": "zyx al.pdf · 第 2 页第 3 张",
+    "illustration": true
+  },
+  "zyx:ZYX-008": {
+    "image": "assets/cases/zyx-zyx-008.webp",
+    "title": "姿态纠正贴片",
+    "source": "zyx al.pdf · 第 2 页第 4 张",
+    "illustration": true
+  },
+  "zyx:ZYX-009": {
+    "image": "assets/cases/zyx-zyx-009.webp",
+    "title": "绘本伴读投影灯",
+    "source": "zyx al.pdf · 第 3 页第 1 张",
+    "illustration": true
+  },
+  "zyx:ZYX-010": {
+    "image": "assets/cases/zyx-zyx-010.webp",
+    "title": "视觉辅助指环",
+    "source": "zyx al.pdf · 第 3 页第 2 张",
+    "illustration": true
+  },
+  "zyx:ZYX-011": {
+    "image": "assets/cases/zyx-zyx-011.webp",
+    "title": "空气管理魔方",
+    "source": "zyx al.pdf · 第 3 页第 3 张",
+    "illustration": true
+  },
+  "zyx:ZYX-012": {
+    "image": "assets/cases/zyx-zyx-012.webp",
+    "title": "AI 录音转写笔",
+    "source": "zyx al.pdf · 第 3 页第 4 张",
+    "illustration": true
+  },
+  "zyx:ZYX-013": {
+    "image": "assets/cases/zyx-zyx-013.webp",
+    "title": "翻译耳机充电盒",
+    "source": "zyx al.pdf · 第 4 页第 1 张",
+    "illustration": true
+  },
+  "zyx:ZYX-014": {
+    "image": "assets/cases/zyx-zyx-014.webp",
+    "title": "手冲咖啡电子秤",
+    "source": "zyx al.pdf · 第 4 页第 2 张",
+    "illustration": true
+  },
+  "zyx:ZYX-015": {
+    "image": "assets/cases/zyx-zyx-015.webp",
+    "title": "康复外骨骼手套",
+    "source": "zyx al.pdf · 第 4 页第 3 张",
+    "illustration": true
+  },
+  "zyx:ZYX-016": {
+    "image": "assets/cases/zyx-zyx-016.webp",
+    "title": "情绪氛围灯",
+    "source": "zyx al.pdf · 第 4 页第 4 张",
+    "illustration": true
+  },
+  "zyx:ZYX-017": {
+    "image": "assets/cases/zyx-zyx-017.webp",
+    "title": "衣柜扫描棒",
+    "source": "zyx al.pdf · 第 5 页第 1 张",
+    "illustration": true
+  },
+  "zyx:ZYX-018": {
+    "image": "assets/cases/zyx-zyx-018.webp",
+    "title": "吉他陪练夹",
+    "source": "zyx al.pdf · 第 5 页第 2 张",
+    "illustration": true
+  },
+  "zyx:ZYX-019": {
+    "image": "assets/cases/zyx-zyx-019.webp",
+    "title": "智能美妆镜",
+    "source": "zyx al.pdf · 第 5 页第 3 张",
+    "illustration": true
+  },
+  "zyx:ZYX-020": {
+    "image": "assets/cases/zyx-zyx-020.webp",
+    "title": "车载语音伴侣",
+    "source": "zyx al.pdf · 第 5 页第 4 张",
+    "illustration": true
+  },
+  "wjy:WJY-001": {
+    "image": "assets/cases/wjy-wjy-001.webp",
+    "title": "洗烘一体流程",
+    "source": "wjy al.pdf · 第 1 页第 1 张",
+    "illustration": false
+  },
+  "wjy:WJY-003": {
+    "image": "assets/cases/wjy-wjy-003.webp",
+    "title": "食材识别冰箱",
+    "source": "wjy al.pdf · 第 1 页第 2 张",
+    "illustration": false
+  },
+  "wjy:WJY-008": {
+    "image": "assets/cases/wjy-wjy-008.webp",
+    "title": "户外助力外骨骼",
+    "source": "wjy al.pdf · 第 1 页第 3 张",
+    "illustration": false
+  },
+  "wjy:WJY-009": {
+    "image": "assets/cases/wjy-wjy-009.webp",
+    "title": "实时翻译耳机",
+    "source": "wjy al.pdf · 第 1 页第 4 张",
+    "illustration": false
+  },
+  "wjy:WJY-012": {
+    "image": "assets/cases/wjy-wjy-012.webp",
+    "title": "AI 追踪摄像机",
+    "source": "wjy al.pdf · 第 2 页第 1 张",
+    "illustration": false
+  },
+  "wjy:WJY-014": {
+    "image": "assets/cases/wjy-wjy-014.webp",
+    "title": "赛事摄影与智能选片",
+    "source": "wjy al.pdf · 第 2 页第 2 张",
+    "illustration": false
+  },
+  "wjy:WJY-015": {
+    "image": "assets/cases/wjy-wjy-015.webp",
+    "title": "课堂笔记 × 录音回挂",
+    "source": "wjy al.pdf · 第 2 页第 3 张",
+    "illustration": false
+  },
+  "wjy:WJY-016": {
+    "image": "assets/cases/wjy-wjy-016.webp",
+    "title": "会「犹豫」的实体棋盘",
+    "source": "wjy al.pdf · 第 2 页第 4 张",
+    "illustration": false
+  },
+  "wjy:WJY-018": {
+    "image": "assets/cases/wjy-wjy-018.webp",
+    "title": "骑行自动跟拍无人机",
+    "source": "wjy al.pdf · 第 3 页第 1 张",
+    "illustration": false
+  },
+  "wjy:WJY-021": {
+    "image": "assets/cases/wjy-wjy-021.webp",
+    "title": "智能眼镜会议提示",
+    "source": "wjy al.pdf · 第 3 页第 2 张",
+    "illustration": false
+  },
+  "wjy:WJY-025": {
+    "image": "assets/cases/wjy-wjy-025.webp",
+    "title": "泳池清洁机器人",
+    "source": "wjy al.pdf · 第 3 页第 3 张",
+    "illustration": false
+  },
+  "wjy:WJY-029": {
+    "image": "assets/cases/wjy-wjy-029.webp",
+    "title": "无边界割草机器人",
+    "source": "wjy al.pdf · 第 3 页第 4 张",
+    "illustration": false
+  },
+  "wjy:WJY-030": {
+    "image": "assets/cases/wjy-wjy-030.webp",
+    "title": "观察型 AI 喂鸟器",
+    "source": "wjy al.pdf · 第 4 页第 1 张",
+    "illustration": false
+  },
+  "wjy:WJY-031": {
+    "image": "assets/cases/wjy-wjy-031.webp",
+    "title": "3D 打印看护设备",
+    "source": "wjy al.pdf · 第 4 页第 2 张",
+    "illustration": false
+  },
+  "wjy:WJY-032": {
+    "image": "assets/cases/wjy-wjy-032.webp",
+    "title": "分区温控床垫",
+    "source": "wjy al.pdf · 第 4 页第 3 张",
+    "illustration": false
+  },
+  "wjy:WJY-033": {
+    "image": "assets/cases/wjy-wjy-033.webp",
+    "title": "讲题 AI(先诊断再讲)",
+    "source": "wjy al.pdf · 第 4 页第 4 张",
+    "illustration": false
+  },
+  "wjy:WJY-038": {
+    "image": "assets/cases/wjy-wjy-038.webp",
+    "title": "无摄像头智能眼镜",
+    "source": "wjy al.pdf · 第 5 页第 1 张",
+    "illustration": false
+  },
+  "wjy:WJY-039": {
+    "image": "assets/cases/wjy-wjy-039.webp",
+    "title": "Rabbit R1 口袋式 AI 终端",
+    "source": "wjy al.pdf · 第 5 页第 2 张",
+    "illustration": false
+  },
+  "wjy:WJY-040": {
+    "image": "assets/cases/wjy-wjy-040.webp",
+    "title": "WJY-040",
+    "source": "wjy al.pdf · 第 5 页第 3 张",
+    "illustration": false
+  },
+  "wjy:WJY-041": {
+    "image": "assets/cases/wjy-wjy-041.webp",
+    "title": "叠衣机器人",
+    "source": "wjy al.pdf · 第 5 页第 4 张",
+    "illustration": false
+  },
+  "lzx:002": {
+    "image": "assets/cases/lzx-002.webp",
+    "title": "Rabbit R1 口袋AI终端",
+    "source": "lzx al.docx · 编号 002",
+    "illustration": false
+  },
+  "lzx:004": {
+    "image": "assets/cases/lzx-004.webp",
+    "title": "Plaud NotePin 磁吸AI录音胸针",
+    "source": "lzx al.docx · 编号 004",
+    "illustration": false
+  },
+  "lzx:018": {
+    "image": "assets/cases/lzx-018.webp",
+    "title": "Meta Ray-Ban Display 带显示AI眼镜",
+    "source": "lzx al.docx · 编号 018",
+    "illustration": false
+  },
+  "lzx:022": {
+    "image": "assets/cases/lzx-022.webp",
+    "title": "RayNeo X3 Pro 全彩MicroLED AR眼镜",
+    "source": "lzx al.docx · 编号 022",
+    "illustration": false
+  },
+  "lzx:030": {
+    "image": "assets/cases/lzx-030.webp",
+    "title": "Oura Ring 4 智能戒指",
+    "source": "lzx al.docx · 编号 030",
+    "illustration": false
+  },
+  "lzx:036": {
+    "image": "assets/cases/lzx-036.webp",
+    "title": "Eko Core 500 AI数字听诊器",
+    "source": "lzx al.docx · 编号 036",
+    "illustration": false
+  },
+  "lzx:040": {
+    "image": "assets/cases/lzx-040.webp",
+    "title": "Eight Sleep Pod 4 智能温控床垫",
+    "source": "lzx al.docx · 编号 040",
+    "illustration": false
+  },
+  "lzx:043": {
+    "image": "assets/cases/lzx-043.webp",
+    "title": "Samsung Ballie 家用移动AI机器人",
+    "source": "lzx al.docx · 编号 043",
+    "illustration": false
+  },
+  "lzx:048": {
+    "image": "assets/cases/lzx-048.webp",
+    "title": "Dreame X50 Ultra 仿生机械足扫地机器人",
+    "source": "lzx al.docx · 编号 048",
+    "illustration": false
+  },
+  "lzx:053": {
+    "image": "assets/cases/lzx-053.webp",
+    "title": "Segway Navimow X3 无边界割草机器人",
+    "source": "lzx al.docx · 编号 053",
+    "illustration": false
+  },
+  "lzx:057": {
+    "image": "assets/cases/lzx-057.webp",
+    "title": "Bird Buddy Pro AI喂鸟器",
+    "source": "lzx al.docx · 编号 057",
+    "illustration": false
+  },
+  "lzx:063": {
+    "image": "assets/cases/lzx-063.webp",
+    "title": "学而思 AI Buddy 情绪化学习伙伴",
+    "source": "lzx al.docx · 编号 063",
+    "illustration": false
+  },
+  "lzx:068": {
+    "image": "assets/cases/lzx-068.webp",
+    "title": "Fuzozo 芙崽 AI情感潮玩",
+    "source": "lzx al.docx · 编号 068",
+    "illustration": false
+  },
+  "lzx:071": {
+    "image": "assets/cases/lzx-071.webp",
+    "title": "Dipal D1 裸眼3D角色舱",
+    "source": "lzx al.docx · 编号 071",
+    "illustration": false
+  },
+  "lzx:075": {
+    "image": "assets/cases/lzx-075.webp",
+    "title": "1X NEO 家用双足机器人",
+    "source": "lzx al.docx · 编号 075",
+    "illustration": false
+  },
+  "lzx:081": {
+    "image": "assets/cases/lzx-081.webp",
+    "title": "Urtopia Fusion AI电助力自行车",
+    "source": "lzx al.docx · 编号 081",
+    "illustration": false
+  },
+  "lzx:087": {
+    "image": "assets/cases/lzx-087.webp",
+    "title": "Agari AI反向煎烤炉",
+    "source": "lzx al.docx · 编号 087",
+    "illustration": false
+  },
+  "lzx:089": {
+    "image": "assets/cases/lzx-089.webp",
+    "title": "Bambu Lab H2D 桌面3D打印工作站",
+    "source": "lzx al.docx · 编号 089",
+    "illustration": false
+  },
+  "lzx:091": {
+    "image": "assets/cases/lzx-091.webp",
+    "title": "Solvia ED 8x32 AI望远镜",
+    "source": "lzx al.docx · 编号 091",
+    "illustration": false
+  },
+  "lzx:100": {
+    "image": "assets/cases/lzx-100.webp",
+    "title": "Envision Glasses AI智能助视眼镜",
+    "source": "lzx al.docx · 编号 100",
+    "illustration": false
+  },
+  "zzs:ZZS-003": {
+    "image": "assets/cases/zzs-zzs-003.webp",
+    "title": "Ray-Ban Meta 智能眼镜",
+    "source": "zzs al.pptx · 第 1 张幻灯片",
+    "illustration": false
+  },
+  "zzs:ZZS-004": {
+    "image": "assets/cases/zzs-zzs-004.webp",
+    "title": "Friend AI 陪伴项链",
+    "source": "zzs al.pptx · 第 1 张幻灯片",
+    "illustration": false
+  },
+  "zzs:ZZS-007": {
+    "image": "assets/cases/zzs-zzs-007.webp",
+    "title": "Omi 开源 AI 穿戴",
+    "source": "zzs al.pptx · 第 2 张幻灯片",
+    "illustration": false
+  },
+  "zzs:ZZS-008": {
+    "image": "assets/cases/zzs-zzs-008.webp",
+    "title": "Dot(New Computer)",
+    "source": "zzs al.pptx · 第 2 张幻灯片",
+    "illustration": false
+  },
+  "zzs:ZZS-009": {
+    "image": "assets/cases/zzs-zzs-009.webp",
+    "title": "Samsung Galaxy Ring",
+    "source": "zzs al.pptx · 第 3 张幻灯片",
+    "illustration": false
+  },
+  "zzs:ZZS-012": {
+    "image": "assets/cases/zzs-zzs-012.webp",
+    "title": "Withings Omnia 智能健康镜",
+    "source": "zzs al.pptx · 第 3 张幻灯片",
+    "illustration": false
+  },
+  "zzs:ZZS-013": {
+    "image": "assets/cases/zzs-zzs-013.webp",
+    "title": "Timekettle W4 Pro 翻译耳机",
+    "source": "zzs al.pptx · 第 4 张幻灯片",
+    "illustration": false
+  },
+  "zzs:ZZS-014": {
+    "image": "assets/cases/zzs-zzs-014.webp",
+    "title": "Owl Labs Meeting Owl 4+",
+    "source": "zzs al.pptx · 第 4 张幻灯片",
+    "illustration": false
+  },
+  "zzs:ZZS-015": {
+    "image": "assets/cases/zzs-zzs-015.webp",
+    "title": "GPD Pocket 4 模块化 AI 掌上电脑",
+    "source": "zzs al.pptx · 第 5 张幻灯片",
+    "illustration": false
+  },
+  "zzs:ZZS-016": {
+    "image": "assets/cases/zzs-zzs-016.webp",
+    "title": "科大讯飞 AI学习机 T30 Pro",
+    "source": "zzs al.pptx · 第 5 张幻灯片",
+    "illustration": false
+  },
+  "zzs:ZZS-017": {
+    "image": "assets/cases/zzs-zzs-017.webp",
+    "title": "网易有道词典笔 X7",
+    "source": "zzs al.pptx · 第 6 张幻灯片",
+    "illustration": false
+  },
+  "zzs:ZZS-018": {
+    "image": "assets/cases/zzs-zzs-018.webp",
+    "title": "Miko 3 儿童AI机器人",
+    "source": "zzs al.pptx · 第 6 张幻灯片",
+    "illustration": false
+  },
+  "zzs:ZZS-019": {
+    "image": "assets/cases/zzs-zzs-019.webp",
+    "title": "Samsung Ballie 家庭机器人",
+    "source": "zzs al.pptx · 第 7 张幻灯片",
+    "illustration": false
+  },
+  "zzs:ZZS-020": {
+    "image": "assets/cases/zzs-zzs-020.webp",
+    "title": "LG AI Home Hub / Q9",
+    "source": "zzs al.pptx · 第 7 张幻灯片",
+    "illustration": false
+  },
+  "zzs:ZZS-022": {
+    "image": "assets/cases/zzs-zzs-022.webp",
+    "title": "ElliQ 老年陪伴机器人",
+    "source": "zzs al.pptx · 第 8 张幻灯片",
+    "illustration": false
+  },
+  "zzs:ZZS-025": {
+    "image": "assets/cases/zzs-zzs-025.webp",
+    "title": "xBloom Studio AI 手冲咖啡机",
+    "source": "zzs al.pptx · 第 8 张幻灯片",
+    "illustration": false
+  },
+  "zzs:ZZS-024": {
+    "image": "assets/cases/zzs-zzs-024.webp",
+    "title": "石头 Saros Z70 机械臂扫地机",
+    "source": "zzs al.pptx · 第 9 张幻灯片",
+    "illustration": false
+  },
+  "zzs:ZZS-027": {
+    "image": "assets/cases/zzs-zzs-027.webp",
+    "title": "Segway Navimow 割草机器人",
+    "source": "zzs al.pptx · 第 9 张幻灯片",
+    "illustration": false
+  },
+  "zzs:ZZS-028": {
+    "image": "assets/cases/zzs-zzs-028.webp",
+    "title": "Moonwalkers 智能电动鞋",
+    "source": "zzs al.pptx · 第 10 张幻灯片",
+    "illustration": false
+  },
+  "zzs:ZZS-026": {
+    "image": "assets/cases/zzs-zzs-026.webp",
+    "title": "AISO 智能烤箱",
+    "source": "zzs al.pptx · 第 10 张幻灯片",
+    "illustration": false
+  }
+}
