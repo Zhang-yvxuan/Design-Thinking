@@ -32,8 +32,8 @@ function bindShared(){
   image.addEventListener('click',()=>image.classList.toggle('is-large'));
   dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
   dialog.addEventListener('close',()=>{image.removeAttribute('src');origin?.focus({preventScroll:true});});
-  const reader=$('#reading'); let queued=false;
-  const paint=()=>{queued=false;const d=document.documentElement;reader.value=Math.max(0,Math.min(100,d.scrollTop/(d.scrollHeight-d.clientHeight)*100||0));};
+  const reader=$('#reading'), navBar=$('.nav'); let queued=false;
+  const paint=()=>{queued=false;const d=document.documentElement;reader.value=Math.max(0,Math.min(100,d.scrollTop/(d.scrollHeight-d.clientHeight)*100||0));if(navBar)navBar.toggleAttribute('data-stuck',d.scrollTop>8);};
   const queue=()=>{if(!queued){queued=true;requestAnimationFrame(paint);}};
   addEventListener('scroll',queue,{passive:true});addEventListener('resize',queue);paint();
   if(location.pathname.endsWith('/')||location.pathname.endsWith('index.html')){
