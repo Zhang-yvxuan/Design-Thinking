@@ -6,7 +6,7 @@ nav=(('index.html','首页'),('cases.html','案例与观点'),('scenes.html','�
 
 def page(name,title,kicker,description,body,home=False):
     links=''.join(f'<a href="{file}"'+(' aria-current="page"' if file==name else '')+f'>{label}</a>' for file,label in nav)
-    head=(f'<section class="cover"><div class="hero__art" aria-hidden="true"></div><div class="cover-copy"><p class="eyebrow">{kicker}</p><h1>AI 智能硬件<span>跨场景调研</span></h1><p>{description}</p><div class="cover-links"><a class="action" href="cases.html">浏览案例 ↗</a><a class="quiet-link" href="scenes.html">查看场景版图 ↓</a></div><ul id="stats" class="stats" aria-label="调研概览"></ul></div></section>' if home else
+    head=(f'<section class="cover"><div class="hero__art" aria-hidden="true"></div><div class="cover-copy"><p class="eyebrow">{kicker}</p><h1>AI 智能硬件<span>跨场景调研</span></h1><p>{description}</p><div class="cover-links"><a class="action" href="cases.html">浏览案例 ↗</a><a class="quiet-link" href="#map">查看场景版图 ↓</a></div><ul id="stats" class="stats" aria-label="调研概览"></ul></div></section>' if home else
           f'<header class="page-head"><p class="eyebrow">{kicker}</p><h1>{title}</h1><p>{description}</p></header>')
     (site/name).write_text(f'''<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -21,6 +21,9 @@ def page(name,title,kicker,description,body,home=False):
 ''',encoding='utf8')
 
 page('index.html','跨场景调研','设计思维课程 / AI HARDWARE STUDIES','从典型硬件的使用细节出发，把产品观察、场景分类和极端用户分析串起来，寻找下一轮设计机会。','''
+<section class="edition map-edition" id="map"><div class="split-head"><div><p class="eyebrow">00 / SCENE MAP</p><h2>先看这张场景版图</h2></div><a class="quiet-link" href="scenes.html">按场景翻案例 ↗</a></div>
+<p class="map-note">44 个末级场景按工作、休闲、居家、学习四类铺开，每条场景下面挂着落在这条线上的案例编号。案例卡按编号回填，读的时候先在这里定位场景，再看谁在这条线上，比逐张翻卡片更快找到同类问题。</p>
+<button type="button" class="zoom-trigger map-frame" data-zoom="assets/figures/scene-map.png" data-alt="AI 产品应用场景分类思维导图"><img src="assets/figures/scene-map.png" alt="AI 产品应用场景分类思维导图，分工作与办公、休闲与情感陪伴、居家生活、学习与个人成长四类" width="1684" height="1191" decoding="async"><span class="map-hint">点开看全图 · 1684 × 1191</span></button></section>
 <section class="edition" id="case"><div class="split-head"><div><p class="eyebrow">01 / CURATED CASES</p><h2>精选案例</h2></div><a class="quiet-link" href="cases.html">进入案例档案 ↗</a></div><div id="featured" aria-live="polite"></div></section>
 <section class="edition"><div class="split-head"><div><p class="eyebrow">02 / FIELD GUIDE</p><h2>从哪里读起？</h2></div></div>
 <div class="entry-grid"><a href="cases.html"><b>01</b><h3>看一个产品</h3><p>从外观和操作入手，读案例卡里的观察、原因与设计启示。</p><span>案例与观点 ↗</span></a><a href="scenes.html"><b>02</b><h3>看一类人怎么用</h3><p>从四大场景进入 44 个细分场景，顺着原导图回到关联案例。</p><span>场景与用户 ↗</span></a><a href="library.html"><b>03</b><h3>回到资料</h3><p>查看五位成员的数据包、资料获取渠道和文献索引。</p><span>资料库 ↗</span></a></div></section>

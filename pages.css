@@ -47,3 +47,11 @@
 body{overflow-x:clip}
 @media(max-width:560px){.stats{gap:10px 16px}.stats li+li{padding-left:0}.stats li+li::before{display:none}.stats b{font-size:22px}}
 @media(max-width:560px){.nav-end{gap:6px}.gh{padding:0 9px}}
+/* 首页场景版图 */
+.map-edition{border-top:0;padding-top:8px}
+.map-note{max-width:74ch;color:var(--soft);margin:0 0 16px}
+.map-frame{display:block;width:100%;padding:10px;background:#fff;border:1px solid var(--line);border-radius:var(--r);position:relative;transition:border-color .22s ease,box-shadow .22s ease;overflow:hidden}
+.map-frame:hover{border-color:#b9cdbb;box-shadow:0 14px 32px rgba(29,49,40,.09)}
+.map-frame img{display:block;width:100%;height:clamp(260px,44vw,600px);object-fit:contain;border-radius:6px;background:#fff}
+.map-hint{position:absolute;right:18px;bottom:18px;font-size:11px;font-weight:650;color:var(--green);background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 11px;pointer-events:none}
+@media(max-width:560px){.map-frame img{height:250px}.map-hint{right:10px;bottom:10px;font-size:10px;padding:3px 9px}}
