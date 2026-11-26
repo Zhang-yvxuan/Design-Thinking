@@ -1,6 +1,6 @@
-# AI 智能硬件 · 跨场景调研
+﻿# AI 智能硬件 · 跨场景调研
 
-[查看线上展站](https://zhang-yvxuan.github.io/Design-Thinking--/)
+[查看线上展站](https://zhang-yvxuan.github.io/Design-Thinking/)
 
 设计思维课程成果，分四页浏览：
 
