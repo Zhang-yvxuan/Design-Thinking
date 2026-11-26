@@ -15,7 +15,7 @@ export async function mount(){
     const href=safeUrl(x.url);
     const title=esc(x.title||x.id);
     const officialId=x.ownerKey==='lzx'&&view==='cases'?`LZX-${x.id}`:x.id;
-    const illustration=x.art?.illustration?'案例示意图':'原案例卡配图';
+    const illustration=x.art?.caption||(x.art?.illustration?'案例示意图':'原案例卡配图');
     return `<article class="record${view==='opinions'?' opinion-record':''}" data-record="${id}">${img?zoomButton(img,x.title,`<img class="record-img" src="${esc(img)}" alt="" loading="lazy" decoding="async"><span class="record-caption">${illustration}</span>`):''}<div class="record-body"><p class="record-meta"><b>${esc(officialId)}</b><span>${esc(x.owner)}</span></p><h3>${title}</h3>${view==='opinions'&&x.scene&&x.scene!==x.title?`<p class="byline">${esc(x.scene)}</p>`:''}${x.core?`<blockquote>${esc(x.core)}</blockquote>`:''}<details ${isOpen?'open':''}><summary>${view==='cases'?'阅读观察、原因与启示':'展开观点正文'}</summary>${view==='cases'?`<dl class="record-facts">${factList(x)}</dl>`:`<div class="opinion-body">${x.body.map(t=>`<p>${esc(t)}</p>`).join('')}</div>`}${x.scenes?.length?`<div class="chip-list">${x.scenes.map(sceneLink).join('')}</div>`:''}${href?`<a class="quiet-link" href="${esc(href)}" rel="noopener noreferrer" target="_blank">原卡所列来源 ↗</a>`:''}${x.source||x.art?.source?`<p class="byline">原件：${esc(x.source||x.art.source)}</p>`:''}</details></div></article>`;
   }
   function draw(){

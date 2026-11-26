@@ -1,123 +1,143 @@
 {
   "zyx:ZYX-001": {
     "image": "assets/cases/zyx-zyx-001.webp",
-    "title": "AI 桌面伴学机器人",
-    "source": "zyx al.pdf · 第 1 页第 1 张",
-    "illustration": true
+    "title": "LOOI 手机底座机器人",
+    "source": "LOOI 官网 looirobot.com 的产品场景图，白色底座上架着一部手机，屏幕上只有两只眼睛。",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "zyx:ZYX-002": {
     "image": "assets/cases/zyx-zyx-002.webp",
-    "title": "AI 睡眠监护仪",
-    "source": "zyx al.pdf · 第 1 页第 2 张",
-    "illustration": true
+    "title": "Withings 睡眠传感带",
+    "source": "Withings 官网 Sleep 产品页的官方渲染图，灰色织物传感带连一根细线。",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "zyx:ZYX-003": {
     "image": "assets/cases/zyx-zyx-003.webp",
-    "title": "开放式耳夹耳机",
-    "source": "zyx al.pdf · 第 1 页第 3 张",
-    "illustration": true
+    "title": "华为 FreeClip 耳夹",
+    "source": "华为官网 FreeClip 产品页的官方渲染图，两只耳机同框，能看到声学球、C 桥与舒适豆。",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "zyx:ZYX-004": {
     "image": "assets/cases/zyx-zyx-004.webp",
-    "title": "食材识别摄像头",
-    "source": "zyx al.pdf · 第 1 页第 4 张",
-    "illustration": true
+    "title": "Smarter 冰箱外挂相机",
+    "source": "Smarter 官网 FridgeCam 商品页的官方渲染图，白色球体机身与深灰球头支架。",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "zyx:ZYX-005": {
     "image": "assets/cases/zyx-zyx-005.webp",
-    "title": "会议拾音圆盘",
-    "source": "zyx al.pdf · 第 2 页第 1 张",
-    "illustration": true
+    "title": "得到 AI 录音台",
+    "source": "得到 2026 秋季发布会 · 实拍",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "zyx:ZYX-006": {
     "image": "assets/cases/zyx-zyx-006.webp",
-    "title": "智能分药盒",
-    "source": "zyx al.pdf · 第 2 页第 2 张",
-    "illustration": true
+    "title": "Hero 智能配药机",
+    "source": "Hero Health 产品演示图，白底整机位、手指按正面圆键取药（诊所页面转载）",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "zyx:ZYX-007": {
     "image": "assets/cases/zyx-zyx-007.webp",
-    "title": "宠物陪伴喂食机",
-    "source": "zyx al.pdf · 第 2 页第 3 张",
-    "illustration": true
+    "title": "Furbo 360 宠物相机",
+    "source": "Mashable 测评实拍：Furbo 360 立在壁炉石台上，镜头与抛食孔同框",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "zyx:ZYX-008": {
     "image": "assets/cases/zyx-zyx-008.webp",
-    "title": "姿态纠正贴片",
-    "source": "zyx al.pdf · 第 2 页第 4 张",
-    "illustration": true
+    "title": "Upright GO2 贴片",
+    "source": "Back to Sport 零售页实拍：白色贴片用背胶粘在上背正中，白底棚拍",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "zyx:ZYX-009": {
     "image": "assets/cases/zyx-zyx-009.webp",
-    "title": "绘本伴读投影灯",
-    "source": "zyx al.pdf · 第 3 页第 1 张",
-    "illustration": true
+    "title": "Moonlite 绘本投影灯",
+    "source": "Moonlite 官网商品页场景图：手机夹上投影筒，把《三只小猪》投到墙面",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "zyx:ZYX-010": {
     "image": "assets/cases/zyx-zyx-010.webp",
-    "title": "视觉辅助指环",
-    "source": "zyx al.pdf · 第 3 页第 2 张",
-    "illustration": true
+    "title": "Sunu Band 声呐手环",
+    "source": "Sunu 官网产品实拍（站点已下线，取自 web.archive.org 存档）：手腕佩戴近景。原卡写的是指环，这款真产品是腕带，文案已改为“腕上”。",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "zyx:ZYX-011": {
     "image": "assets/cases/zyx-zyx-011.webp",
-    "title": "空气管理魔方",
-    "source": "zyx al.pdf · 第 3 页第 3 张",
-    "illustration": true
+    "title": "青萍空气检测仪 Lite",
+    "source": "青萍 Air Monitor Lite 厂商产品图（零售渠道同款）：掌心托着的白色立方体机身，正面屏上是 PM2.5 读数。",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "zyx:ZYX-012": {
     "image": "assets/cases/zyx-zyx-012.webp",
-    "title": "AI 录音转写笔",
-    "source": "zyx al.pdf · 第 3 页第 4 张",
-    "illustration": true
+    "title": "搜狗 AI 录音笔 C1",
+    "source": "搜狗 C1 官方产品图：正面指示灯与背面一体式背夹两个角度，深色背景，无第三方水印。",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "zyx:ZYX-013": {
     "image": "assets/cases/zyx-zyx-013.webp",
-    "title": "翻译耳机充电盒",
-    "source": "zyx al.pdf · 第 4 页第 1 张",
-    "illustration": true
+    "title": "时空壶 X1 翻译耳机盒",
+    "source": "时空壶官网产品图：盒身顶面的触控屏与摆在盒边的两只耳机。屏在盒身顶面而非盒盖，两只耳机收在盒身一端，文案按这个真实结构改写。",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "zyx:ZYX-014": {
     "image": "assets/cases/zyx-zyx-014.webp",
-    "title": "手冲咖啡电子秤",
-    "source": "zyx al.pdf · 第 4 页第 2 张",
-    "illustration": true
+    "title": "Acaia 手冲咖啡秤",
+    "source": "Acaia 官网 Pearl Model S（Pearl S）产品页产品照，屏上为手冲计时 1:23 与克数 65.0",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "zyx:ZYX-015": {
     "image": "assets/cases/zyx-zyx-015.webp",
-    "title": "康复外骨骼手套",
-    "source": "zyx al.pdf · 第 4 页第 3 张",
-    "illustration": true
+    "title": "Bioservo 助力手套",
+    "source": "Bioservo 官网 Carbonhand 软体助力手套产品照",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "zyx:ZYX-016": {
     "image": "assets/cases/zyx-zyx-016.webp",
-    "title": "情绪氛围灯",
-    "source": "zyx al.pdf · 第 4 页第 4 张",
-    "illustration": true
+    "title": "Nanoleaf 六角氛围灯",
+    "source": "Nanoleaf 官网 Shapes 六角灯场景图",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "zyx:ZYX-017": {
     "image": "assets/cases/zyx-zyx-017.webp",
-    "title": "衣柜扫描棒",
-    "source": "zyx al.pdf · 第 5 页第 1 张",
-    "illustration": true
+    "title": "Echo Look 穿搭相机",
+    "source": "Amazon Echo Look 官方产品照，取自 Ars Technica 报道页（以立式穿搭相机代替手持扫描棒）",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "zyx:ZYX-018": {
     "image": "assets/cases/zyx-zyx-018.webp",
-    "title": "吉他陪练夹",
-    "source": "zyx al.pdf · 第 5 页第 2 张",
-    "illustration": true
+    "title": "Roadie 3 自动调音器",
+    "source": "Roadie 官方 Roadie 3 产品页使用场景图（roadietuner.com）",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "zyx:ZYX-019": {
     "image": "assets/cases/zyx-zyx-019.webp",
-    "title": "智能美妆镜",
-    "source": "zyx al.pdf · 第 5 页第 3 张",
-    "illustration": true
+    "title": "HiMirror 智能美妆镜",
+    "source": "HiMirror Plus+ 官方产品图，TechRadar 评测配图",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "zyx:ZYX-020": {
     "image": "assets/cases/zyx-zyx-020.webp",
-    "title": "车载语音伴侣",
-    "source": "zyx al.pdf · 第 5 页第 4 张",
-    "illustration": true
+    "title": "蔚来 NOMI 车载语音助手",
+    "source": "蔚来 NOMI GPT 官方宣传图，搜狐转载",
+    "illustration": false,
+    "caption": "产品实拍"
   },
   "wjy:WJY-001": {
     "image": "assets/cases/wjy-wjy-001.webp",
